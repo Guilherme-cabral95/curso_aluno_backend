@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 export default {
-  url: 'http://localhost:8082',
+  url: process.env.URL_APP,
 };

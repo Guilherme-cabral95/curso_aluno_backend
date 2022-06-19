@@ -2,12 +2,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 import path from 'path';
-import './src/databases';
+import './databases';
 import express from 'express';
-import UserRouter from './src/routes/User';
-import AlunosRouters from './src/routes/Alunos';
-import token from './src/routes/token';
-import foto from './src/routes/Foto';
+import UserRouter from './routes/User';
+import AlunosRouters from './routes/Alunos';
+import token from './routes/token';
+import foto from './routes/Foto';
 
 class App {
   constructor() {
