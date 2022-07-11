@@ -11,6 +11,7 @@ class Foto {
       if (err) {
         return res.status(400).json({ errors: [err.code] });
       }
+
       const { originalname, filename } = req.file;
       const { id_alunos } = req.body;
       const alunos = await Alunos.findByPk(id_alunos);
